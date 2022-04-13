@@ -11,10 +11,12 @@ However, VGG-19 is not the most "efficient" choice regarding computational cost 
 ### Method of style transfering
 The method is more like transfer learning, as we need to make use of pre-trained weights from VGG-19 and do optimization on the ouput by pushing it to learn content from image <img src="https://latex.codecogs.com/svg.image?C"/>  and learn style from image <img src="https://latex.codecogs.com/svg.image?S"/> . The initialization of the output image <img src="https://latex.codecogs.com/svg.image?X"/>  is from a white noise picture, and the loss function <img src="https://latex.codecogs.com/svg.image?f(X)"/>  has two parts combined. The first part is to regularize the content fidelity and the second part is to regularize the style blending.
 
+
 <img src="https://latex.codecogs.com/svg.image?L_{C,S}(X)=\alpha&space;L_{content}(C,X)&plus;\beta&space;L_{style}(S,X)"/>.
 Here, the first term can be further write as follows
 <img src="https://latex.codecogs.com/svg.image?L_{C,S}(X)=\alpha&space;L_{content}(C,X)&plus;\beta&space;L_{style}(S,X)"/>.
 
 
+<img src=" https://latex.codecogs.com/svg.image?L_{style}(S,X)=\frac{1}{2}\sum_{l=1}^K&space;w_l&space;\sum_{(i,j)\in&space;I_l}(F_{i,j}^l-P_{i,j}^l)^2 "/>
 
 
