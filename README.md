@@ -4,7 +4,7 @@ In 2015, there was a paper named ["A Neural Algorithm of Artistic Style"](https:
 ### Introduction for VGG-19
 VGG is a convolutional neural network that has a depth of 19 layers. It was build and trained by K. Simonyan and A. Zisserman at the University of Oxford in 2014. The VGG-19 network is trained using more than 1 million images from the ImageNet database. It was trained on 224x224 pixels colored images. Naturally, you can import the model with the ImageNet trained weights. This pre-trained network can classify up to 1000 objects. The structure is as follows.
 ![Drag Racing](/images/vgg19.jpeg)</br>
-However, VGG-19 is not the most "efficient" choice regarding computational cost and accuracy, see the following comparison. Therefore, I will use GoogLeNet or ResNet to do this project. But, the original paper and my original projects in Statisical Learning course used the VGG-19.
+However, VGG-19 is not the most "efficient" choice regarding computational cost and accuracy, see the following comparison. Also note that the original paper and the demo projects in Statisical Learning course used the VGG-19.
 ![Drag Racing](/images/Net_comparison.jpg)</br>
 
 
@@ -23,3 +23,17 @@ Here, the matrices <img src="https://latex.codecogs.com/svg.image?F_C^l,&space;P
 
 
 ### Implementation 
+See ipynb in /code. I use the content and syle image as follows.
+<p float="left">
+  <img src="/images/C_DC2.png" width="200" align="left" style="margin-right: 3em"/>  
+</p>
+<p float="left">
+  <img src="/images/Leonid_Afremov6.jpeg" width="200" align="left" style="margin-right: 3em"/>  
+</p> 
+
+
+</br></br></br></br></br></br></br></br></br></br>
+After style blending, I get the following down-sampled image. For more implementation details, [see my codes](https://github.com/gitipanda/Style-blending/blob/main/code/Style_blending_demo.ipynb).
+<p float="left">
+  <img src="/images/result.png" width="300" align="left" style="margin-right: 3em"/>  
+</p>
