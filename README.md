@@ -2,10 +2,10 @@
 In 2015, there was a paper named ["A Neural Algorithm of Artistic Style"](https://arxiv.org/pdf/1508.06576.pdf) trying to transfer the style of Van Gogh's painting to any of the given pictures. It seemed an interesting thing and it attracted me to explore this project. Later in 2018, on my Statistical Learning classes, our team tried to demo and repeat this project. By doing so, I got an A++ in this course. 4 years later, today, I would love to rewrite explaination about this project and try to provide a more clear pipeline of codes. I hope I could demo the project as brief and clear as possible. 
 
 ### Introduction for VGG-19
-VGG is a convolutional neural network that has a depth of 19 layers. It was build and trained by K. Simonyan and A. Zisserman at the University of Oxford in 2014. The VGG-19 network is trained using more than 1 million images from the ImageNet database. It was trained on 224x224 pixels colored images. Naturally, you can import the model with the ImageNet trained weights. This pre-trained network can classify up to 1000 objects. The structure is as follows.
-![Drag Racing](/images/vgg19.jpeg)</br>
+VGG is a convolutional neural network that has a depth of 19 layers. It was build and trained by K. Simonyan and A. Zisserman at the University of Oxford in 2014. The VGG-19 network is trained using more than 1 million images from the ImageNet database. It was trained on 224x224 pixels colored images. Naturally, you can import the model with the ImageNet trained weights. This pre-trained network can classify up to 1000 objects. The structure is as follows.</br>
+<img src="/images/vgg19.jpeg" alt="drawing" width="400"/> </br>
 However, VGG-19 is not the most "efficient" choice regarding computational cost and accuracy, see the following comparison. Also note that the original paper and the demo projects in Statisical Learning course used the VGG-19.
-![Drag Racing](/images/Net_comparison.jpg)</br>
+<img src="/images/Net_comparison.jpg" alt="drawing" width="400"/> </br>
 
 
 ### Method of style transfering
